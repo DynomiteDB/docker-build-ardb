@@ -26,7 +26,7 @@ Run `build-ardb` to compile ARDB with each of the following database storage eng
 First, clone and `cd` into the `ardb` git repo.
 
 ```bash
-mkdir -p ~/repos/ 
+mkdir -p ~/repos/ && cd $_
 
 git clone https://github.com/DynomiteDB/ardb.git
 
@@ -53,7 +53,7 @@ docker run -it --rm -v $PWD:/src dynomitedb/build-ardb -t clean
 
 # Manually build the `build-ardb` image
 
-The `build-ardb` Docker image, which is used to compile ARDB, is automatically build via DockerHub.
+The `build-ardb` Docker image, which is used to compile ARDB, is automatically built via DockerHub.
 
 The automated build is located at https://hub.docker.com/r/dynomitedb/build-ardb.
 
@@ -62,7 +62,7 @@ However, you can manually build the `build-ardb` image by executing the commands
 First, clone the `docker-build-ardb` repo and `cd` into the `docker-build-ardb` directory.
 
 ```bash
-mkdir -p ~/repos
+mkdir -p ~/repos/ && cd $_
 
 git clone https://github.com/DynomiteDB/docker-build-ardb.git
 
