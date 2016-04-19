@@ -1,0 +1,8 @@
+# LMDB configure options
+
+# ULIMIT: Call ulimit -n with this argument prior to invoking DynomiteDB LMDB.
+# This may be required for high-concurrency environments. DynomiteDB LMDB itself
+# cannot alter its limits as it is not being run as root. (default: do not call
+# ulimit)
+#
+# ULIMIT=65536
