@@ -36,7 +36,7 @@ cd ~/repos/ardb
 Build ARDB.
 
 ```bash
-docker run -it --rm -v $PWD:/src dynomitedb/build-ardb
+docker run -it --rm -v $PWD:/src dynomitedb/build-ardb -v 0.8.2
 ```
 
 Create a debug build of ARDB.
