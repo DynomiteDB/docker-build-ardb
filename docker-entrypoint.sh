@@ -138,8 +138,7 @@ echo "--------------------------------------------------------------------------
 cd $BUILD_ROCKSDB
 git checkout rocksdb-only
 # Temporary: newer commits have build errors
-git checkout 2bbb51136e665ea30e8896f177f687376174e6b1
-#storage_engine=rocksdb make
+#git checkout 2bbb51136e665ea30e8896f177f687376174e6b1
 make
 mv ${BUILD_ROCKSDB}/src/ardb-server ${PACKAGE}/dynomitedb-rocksdb
 mv ${BUILD_ROCKSDB}/src/ardb-test ${PACKAGE}/dynomitedb-rocksdb-test
