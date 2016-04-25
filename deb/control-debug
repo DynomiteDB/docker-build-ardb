@@ -1,0 +1,13 @@
+Package: dynomitedb-backends-debug
+Version: 0:0.0.0
+Section: database
+Priority: extra
+Licence: BSD
+Vendor: DynomiteDB
+Architecture: amd64
+Depends: libc6 (>= 2.14), libstdc++6 (>= 4.8.0), libgcc1 (>= 4.9)
+Maintainer: Akbar S. Ahmed <akbar@dynomitedb.com>
+Homepage: http://www.dynomitedb.com
+Description: Debug builds of persistent backends for DynomiteDB
+ Debug builds of LMDB, RocksDB, LevelDB and WiredTiger backends for
+ DynomiteDB.

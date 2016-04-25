@@ -1,0 +1,16 @@
+# DynomiteDB backends debug
+# Ignore excessive lintian warnings
+
+dynomitedb-backends-debug: unstripped-binary-or-object usr/local/sbin/dynomitedb-leveldb-debug
+dynomitedb-backends-debug: unstripped-binary-or-object usr/local/sbin/dynomitedb-lmdb-debug
+dynomitedb-backends-debug: unstripped-binary-or-object usr/local/sbin/dynomitedb-rocksdb-debug
+dynomitedb-backends-debug: unstripped-binary-or-object usr/local/sbin/dynomitedb-wiredtiger-debug
+dynomitedb-backends-debug: dir-in-usr-local usr/local/sbin/
+dynomitedb-backends-debug: file-in-usr-local usr/local/sbin/dynomitedb-leveldb-debug
+dynomitedb-backends-debug: file-in-unusual-dir usr/local/sbin/dynomitedb-leveldb-debug
+dynomitedb-backends-debug: file-in-usr-local usr/local/sbin/dynomitedb-lmdb-debug
+dynomitedb-backends-debug: file-in-unusual-dir usr/local/sbin/dynomitedb-lmdb-debug
+dynomitedb-backends-debug: file-in-usr-local usr/local/sbin/dynomitedb-rocksdb-debug
+dynomitedb-backends-debug: file-in-unusual-dir usr/local/sbin/dynomitedb-rocksdb-debug
+dynomitedb-backends-debug: file-in-usr-local usr/local/sbin/dynomitedb-wiredtiger-debug
+dynomitedb-backends-debug: file-in-unusual-dir usr/local/sbin/dynomitedb-wiredtiger-debug

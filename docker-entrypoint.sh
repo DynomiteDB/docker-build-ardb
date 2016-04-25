@@ -158,7 +158,9 @@ tar -czf dynomitedb-backends_ubuntu-14.04.4-x64.tar.gz -C /src dynomitedb-backen
 # Update .deb build files
 export ARDB_VERSION=$version
 sed -i 's/0.0.0/'${version}'/' $DEB/changelog
+sed -i 's/0.0.0/'${version}'/' $DEB/changelog-debug
 sed -i 's/0.0.0/'${version}'/' $DEB/control
+sed -i 's/0.0.0/'${version}'/' $DEB/control-debug
 
 $DEB/fpm-build-deb.sh
 
